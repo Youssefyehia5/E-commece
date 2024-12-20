@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.bitcart.Controllers.Client.ClientController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="topcolor" stylesheets="@../../Styles/Client.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="233.0" text="BitCart" textFill="#fda540">
+               <font>
+                  <Font name="Edwardian Script ITC" size="36.0" />
+               </font>
+            </Label>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="36.0" prefWidth="6.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="314.0" styleClass="round-layout" stylesheets="@../../Styles/Client.css">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="248.0" promptText="search" styleClass="transparent" stylesheets="@../../Styles/Client.css" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/icons8-search-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane maxWidth="-Infinity" prefHeight="60.0" prefWidth="364.0" stylesheets="@../../Styles/Client.css" />
+            <HBox alignment="TOP_RIGHT" prefHeight="58.0" prefWidth="317.0">
+               <children>
+                  <Label fx:id="userName" prefHeight="50.0" prefWidth="194.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/icons8-male-user-32.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="675.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="181.0" prefWidth="222.0" spacing="5.0" styleClass="topcolor">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="194.0" text="Browse">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-increase-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="41.0" prefWidth="140.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css" text="Most Selling">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-safari-48.png" />
+                           </image>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="white-background" />
+                           </styleClass>
+                        </ImageView>
+                        <Label prefHeight="42.0" prefWidth="140.0" stylesheets="@../../Styles/Client.css" text="Browse">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="white-background" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="selected" />
+                        <String fx:value="white-background" />
+                     </styleClass>
+
+                                    </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-category-32.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="42.0" prefWidth="144.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css" text="Categories">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="185.0" prefWidth="225.0" spacing="5.0" styleClass="topcolor">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-cart-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="140.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css" text="Cart">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-favorites-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="140.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css" text="Wishlist">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="465.0" prefWidth="221.0" spacing="5.0">
+               <children>
+                  <VBox fx:id="description" prefHeight="154.0" prefWidth="108.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></VBox>
+                  <VBox prefHeight="318.0" prefWidth="222.0">
+                     <children>
+                        <Label fx:id="desclabel" alignment="TOP_LEFT" prefHeight="316.0" prefWidth="254.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="67.0" prefWidth="202.0" spacing="15.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8-power-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #FFFFFF;" text="Logout" textFill="#fda540">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="45.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <stylesheets>
+            <URL value="@../../Styles/Client.css" />
+            <URL value="@../../Styles/Client.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="white-background" />
+            <String fx:value="white-background" />
+         </styleClass>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="27.0" prefWidth="173.0" text="Recently Added">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="recentlyAdded" prefHeight="429.0" prefWidth="838.0" styleClass="transparent" stylesheets="@../../Styles/Client.css">
+               <content>
+                  <HBox alignment="CENTER" prefHeight="235.0" prefWidth="1660.0" spacing="20.0" styleClass="transparent" stylesheets="@../../Styles/Client.css">
+                     <children>
+                        <VBox fx:id="iphone15Pro" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/iphone%2015.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0" styleClass="mouse-moved">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="iphone 15pro max">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Apple">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="lenovoLoqBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/Lenovo%20LOQ%20GAMING.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" text="Lenovo LOQ ">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="121.0" text="Lenovo">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="playStation5Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/ps5.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Play Station 5">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Sony">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="nvidiaRtx4090Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/RTX4090.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Nvidia RTX 4090">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Nvidia">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="samsungS24Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/Samsung%20S24.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Samsung S24">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="150.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="samsungTvQledBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="150.0" prefWidth="172.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/Samsung%20TV.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="82.0" prefWidth="172.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Samsung TV QLED">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="samsungWasher7LBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/51+-GVWDNlL._AC_SX679_.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="110.0" stylesheets="@../../Styles/Client.css" text="Samsung&#10;Washer 7L">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="31.0" prefWidth="110.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="viaomiRedmiA3Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="134.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/51NAuglbcbL._AC_SX679_.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="69.0" prefWidth="102.0">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Xiaomi Redmi A3">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Xiaomi">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="computerMonitorBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="150.0" prefWidth="172.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/810Sytc27aL._AC_SX679_.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="82.0" prefWidth="172.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Computer Monitor">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="magicWatchBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                           <children>
+                              <VBox prefHeight="150.0" prefWidth="172.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/61cH5pL0quL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="82.0" prefWidth="172.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="MagicWatch2">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Honor">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children></HBox>
+               </content>
+            </ScrollPane>
+            <Label prefHeight="27.0" prefWidth="294.0" text="Recommended for you">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="581.0" prefWidth="1598.0" styleClass="transparent" stylesheets="@../../Styles/Client.css" VBox.vgrow="ALWAYS">
+               <content>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1650.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="205.0" prefWidth="700.0">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="1637.0" spacing="20.0" styleClass="transparent" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <VBox fx:id="arieteHeaterBox" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleBoxClick" prefHeight="204.0" prefWidth="124.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="122.0">
+                                             <children>
+                                                <ImageView fitHeight="158.0" fitWidth="128.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61F5v3lY+SL._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Ariete Heater">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Ariete">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="oraimoFreebudsBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="162.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61RuDMWoDYL._AC_SX522_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Oraimo Freebuds">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Oraimo">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox fx:id="samsungRefrigeratorBox" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleBoxClick" prefHeight="206.0" prefWidth="83.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="77.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="82.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/31hmArGv3dL.__AC_SY445_SX342_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Refrigerator ">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" fx:id="xiaomiMiBox">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/41Cjh5etxJL._AC_SX522_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Xiaomi Mi Box">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Xiaomi">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="panasonicCoolerBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="86.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/51wRV77dz4L._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Water Cooler">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Panasonic">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="tornadoHandBlenderBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71JkufbKyKL._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Hand Blender">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Tornado">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="sharpAirFryerBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="138.0">
+                                             <children>
+                                                <ImageView fitHeight="148.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/41ODEQ8PYtL.__AC_SY300_SX300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Sharp Air Fryer">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Sharp">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="iphone13ProBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="174.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="127.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71ZVLgqOL5L.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Iphone 13pro">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Apple">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="spotCleanerBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="127.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/51z8YwuTBRL._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Spot Cleaner Pro">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="BISSELL">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="hpPrinterBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61ovsytWdKL.__AC_SY300_SX300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="HP Printer">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="HP">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="redmiNote13Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/51yktMTXbGL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Redmi Note13">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Xiaomi">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutY="224.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="1641.0">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="1640.0" spacing="20.0" styleClass="transparent" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <VBox fx:id="galaxyA55Box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleBoxClick" prefHeight="206.0" prefWidth="118.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="118.0">
+                                             <children>
+                                                <ImageView fitHeight="169.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71iDfC-A+GL._AC_SX679_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Samsung Galaxy A55">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="redmiWatch3Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="104.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61hgWCFnzVL._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Redmi Watch 3 ">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Xiaomi">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="lgTvBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="149.0" fitWidth="213.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/81yiUAc9N4L._AC_SX522_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="LG Smart TV">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="LG">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="samsungMicrowaveBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="159.0" prefWidth="154.0">
+                                             <children>
+                                                <ImageView fitHeight="125.0" fitWidth="172.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61Y69S7DNqL.__AC_SY445_SX342_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Microwave 32L ">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="coffeMachineBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/51WbVBiPRsL._AC_SY879_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Coffe Machine">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Nespresso">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="gShapeBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved">
+                                       <children>
+                                          <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61EHnDIHLDL._AC_SX679_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Smart G Shape">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="SPR">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="lenovoLegionBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/81na65tak2L._AC_SX679_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Lenovo Legion 5">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Lenovo">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="heaterBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="127.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61BwONp447L.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Heater">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="viewSonicBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71rG6HCBelL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="ViewSonic Monitor">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="ViewSonic">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="iphone16Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61bMJdgeryL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Iphone 16pro Max">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Apple">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="217.0" prefWidth="1650.0">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="1648.0" spacing="20.0" styleClass="transparent" stylesheets="@../../Styles/Client.css">
+                                 <children>
+                                    <VBox fx:id="iphone15Pro1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0" stylesheets="@../../Styles/Client.css">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/iphone%2015.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="iphone 15pro max">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Apple">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="lenovoLoqBox1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0" stylesheets="@../../Styles/Client.css">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/Lenovo%20LOQ%20GAMING.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" text="Lenovo LOQ ">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" text="Lenovo">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="playStation5Box1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0" stylesheets="@../../Styles/Client.css">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/ps5.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0" stylesheets="@../../Styles/Client.css">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Play Station 5">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Sony">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="nvidiaRtx4090Box1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/RTX4090.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Nvidia RTX 4090">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Nvidia">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="samsungS24Box1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/Samsung%20S24.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="69.0" prefWidth="102.0">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="180.0" stylesheets="@../../Styles/Client.css" text="Samsung S24">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="28.0" prefWidth="121.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="samsungTvQledBox1" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="184.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="149.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/Samsung%20TV.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Samsung TV QLED">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Samsung">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="samsungTvQledBox2" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71vbPN-lSBL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Play Station 4">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="ps4Box" alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Sony">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="panasonicWasherBox" onMouseClicked="#handleBoxClick" prefHeight="206.0" prefWidth="113.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="137.0" prefWidth="143.0">
+                                             <children>
+                                                <ImageView fitHeight="127.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61KunxEWP-L._AC_SX522_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Washer">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Panasonic">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="mouse-moved" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="ipadBox" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/61PnHlc0HCL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Ipad 9pro">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Apple">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="tufA15Box" onMouseClicked="#handleBoxClick" prefHeight="200.0" prefWidth="100.0" styleClass="mouse-moved" stylesheets="@../../Styles/Client.css">
+                                       <children>
+                                          <VBox prefHeight="150.0" prefWidth="172.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../Images/71kHFb-YzmL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="82.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="38.0" prefWidth="172.0" stylesheets="@../../Styles/Client.css" text="Tuf Gaming F15">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="182.0" stylesheets="@../../Styles/Client.css" text="Asus">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

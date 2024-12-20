@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="400.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="productImage" fitHeight="155.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Lenovo%20LOQ%20GAMING.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="185.0" prefWidth="215.0" spacing="10.0">
+         <children>
+            <Label fx:id="productName" prefHeight="81.0" prefWidth="220.0" text="Lenovo LOQ Gaming I7" />
+            <Label fx:id="sellerName" prefHeight="2.0" prefWidth="220.0" text="B.Tech">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>
